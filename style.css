@@ -18,6 +18,16 @@ header h1{
     font-size: 1.3rem;
     text-align: center;
 }
+footer{
+
+    padding:1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    
+}
+footer a{
+color:#ff0088;
+}
 main{
     color:var(--primary-color);
     font-size: 1.2rem;
@@ -63,16 +73,13 @@ li{
 li>select option{
     color:#00622E;     
 }
-li>input:focus{
-    outline-width: 2px;
-}
-/*feed back quetions and comments*/
+ 
+/*feed back quetions, comments and submit buttonx`*/
 .feedback-choice>li>label{
     color:#555;
 }
  .comments{
-     margin:15px;
-     
+     margin:1rem;
  }
 .comments textarea{
  border:1px solid rgb(135, 206, 235);
@@ -80,7 +87,6 @@ li>input:focus{
  padding:1.2rem;
 }
 .submit-btn{
-  
     color:var(--primary-color);
     font-size:1.4rem;
     text-align: center;
@@ -89,20 +95,21 @@ li>input:focus{
      color:#fff;
      width:300px;  
      display: block;
-     margin-left: 2rem;
+     margin:0 auto;
      border:none;
      border-radius:5px;
 }
-
+input:focus{
+    box-shadow: 0 0 5px 1px #1e90ff;
+}
 /*input validation*/
-input:valid:focus {
-    border:1px solid #3ae087;
-    outline:none;
+ 
+/*
+input:invalid {
+     
+    box-shadow: 0 0 5px 1px rgba(228, 54, 54, 0.842);
 }
-input:invalid:focus {
-    border:1px solid rgba(228, 54, 54, 0.842);
-    outline:none;
-}
+ */
 
 #submit:hover{
     background:#78b7f7;
@@ -116,10 +123,16 @@ input:invalid:focus {
     .container{
         width: 70vw;
         margin: 0 auto;
+        
+    }
+    main{
         border:2px solid var(--primary-color); 
     }
     header h1{
         padding:2rem;
+    }
+    textarea{
+        width:64%;
     }
     
   }
