@@ -104,12 +104,12 @@ input:focus{
 }
 /*input validation*/
  
-/*
-input:invalid {
-     
+
+input:focus:invalid {
+     outline:none;
     box-shadow: 0 0 5px 1px rgba(228, 54, 54, 0.842);
 }
- */
+ 
 
 #submit:hover{
     background:#78b7f7;
