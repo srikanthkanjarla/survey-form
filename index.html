@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>customer feed back survey</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+</head>
+<body id="app">
+    <div class="container">
+            <header>
+                <h1 id="title">Customer Feedback Survey</h1>
+             </header>
+            <main>
+              <p id="description">Please let us know about your experience with our product and service</p>
+              <form action="index.html" id="survey-form" method="POST">
+
+                  <ul class="personal-info">
+                      <li>
+                          <label for="name" id="name-label">First Name </label>                          
+                          <input type="text" id="name" required placeholder="Enter your first name here">                           
+                      </li>
+                     
+                      <li>
+                          <label for="second-name" id="second-name-label">Second Name </label>                          
+                          <input type=" text" id="second-name" required placeholder="Enter your second name here">                           
+                      </li>
+                     
+                      <li>
+                          <label for="email" id="email-label">Email </label>                          
+                          <input type="email" id="email" required placeholder="Enter your email here">                           
+                      </li>
+                     
+                      <li>
+                          <label for="phone" id="phone-label">Phone</label>
+                          <input type="tel" id="phone" required placeholder="Enter your phone here">
+                      </li>
+                     
+                      <li>
+                            <label for="number" id="number-label">Age</label>
+                            <input type="number" id="number" name="age" required min="1" max="110" required placeholder="Enter your age here">
+                        </li>
+                       
+                      <li>
+                          <label for="dropdown" id="age-label">Gender</label>
+                          <select name="age" id="dropdown" placeholder="Age">
+                              <option disabled selected>Select your gender</option>
+                              <option value="twenty-to-twentynine">Male</option>
+                              <option value="thirty-to-thirtynine">Female</option>
+                              <option value="fourty-to-fourtynine">Other</option>
+                          </select>
+                      </li>
+                     </ul>
+                            
+                  <p class="survey-question">Q: How satisfied are you with our company service overall?</p>                                                                
+                          <ul class="feedback-choice">                                   
+                              <li>
+                                  <input type="radio" name="satisfaction-scale" id="satisfaction-scale-5" value="satisfaction-scale-5">
+                                  <label for="satisfaction-scale-5">Very satisfied</label>
+                              </li>
+                              
+                              <li>
+                                  <input type="radio" name="satisfaction-scale" id="satisfaction-scale-4" value="satisfaction-scale-4">
+                                  <label for="satisfaction-scale-4">Somewhat satisfied</label>
+                              </li>
+                              
+                              <li>
+                                  <input type="radio" name="satisfaction-scale" id="satisfaction-scale-3" value="satisfaction-scale-3">
+                                  <label for="satisfaction-scale-3">Satisfied</label>
+                              </li>
+                              
+                              <li>
+                                  <input type="radio" name="satisfaction-scale" id="satisfaction-scale-2" value="satisfaction-scale-2">
+                                  <label for="satisfaction-scale-2">Neither satisfied nor dissatisfied</label>
+                              </li>
+                              
+                              <li>
+                                  <input type="radio" name="satisfaction-scale" id="satisfaction-scale-1" value="satisfaction-scale-1">
+                                  <label for="satisfaction-scale-1">Dissatisfied</label>
+                              </li>
+                          </ul>
+                      
+                  <p class="survey-question">Q: Which of the following words would you use to describe our service (check all that apply)</p>                                
+                            <ul class="feedback-choice">                                    
+                                <li>
+                                    <input type="checkbox" name="feedback-scale" id="feedback-scale-1" value="feedback-scale-1">
+                                    <label for="feedback-scale-1">Reliable</label>
+                                </li>  
+                                
+                                <li>
+                                    <input type="checkbox" name="feedback-scale" id="feedback-scale-2" value="feedback-scale-2">
+                                    <label for="feedback-scale-2">Highquality</label>
+                                </li>
+                                
+                                <li>
+                                    <input type="checkbox" name="feedback-scale" id="feedback-scale-3" value="feedback-scale-3">
+                                    <label for="feedback-scale-3">Useful</label>
+                                </li>
+                                
+                                <li>
+                                    <input type="checkbox" name="feedback-scale" id="feedback-scale-4" value="feedback-scale-4">
+                                    <label for="feedback-scale-4">Good value for money</label>
+                                </li>
+                                
+                                <li>
+                                    <input type="checkbox" name="feedback-scale" id="feedback-scale-5" value="feedback-scale-5">
+                                    <label for="feedback-scale-5">Overpriced</label>
+                                </li>
+                                
+                                <li>
+                                    <input type="checkbox" name="feedback-scale" id="feedback-scale-6" value="feedback-scale-6">
+                                    <label for="feedback-scale-6">Poor quality</label>
+                                </li>
+                            </ul>                                                                                  
+                            <p class="survey-question">Please list any comments or suggestions you have</p>                           
+                            <p class="comments"><textarea name="" id="comments"  cols="35" rows="4" placeholder="Enter your feedback here ..."></textarea></p>
+                            <p><input type="submit" value="Submit" id="submit" class="submit-btn"></p>
+                                    
+              </form>
+            </main>
+            <footer>
+              <p></p>
+            </footer>
+        </div>
+        <!-- Freecodecamp test cases -->
+        <!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+</body>
+</html>
