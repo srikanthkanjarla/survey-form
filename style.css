@@ -78,13 +78,24 @@ li>select option{
 .feedback-choice>li>label{
     color:#555;
 }
- .comments{
-     margin:1rem;
- }
+ 
 .comments textarea{
  border:1px solid rgb(135, 206, 235);
  outline:none;
  padding:1.2rem;
+ display: block;
+ margin:0 auto;
+}
+
+input:focus{
+    box-shadow: 0 0 5px 1px #1e90ff;
+}
+/*input validation*/
+ 
+
+input:focus:invalid {
+     outline:none;
+    box-shadow: 0 0 5px 1px rgba(228, 54, 54, 0.842);
 }
 .submit-btn{
     color:var(--primary-color);
@@ -99,21 +110,9 @@ li>select option{
      border:none;
      border-radius:5px;
 }
-input:focus{
-    box-shadow: 0 0 5px 1px #1e90ff;
-}
-/*input validation*/
- 
-
-input:focus:invalid {
-     outline:none;
-    box-shadow: 0 0 5px 1px rgba(228, 54, 54, 0.842);
-}
- 
 
 #submit:hover{
-    background:#78b7f7;
-    border:1px solid #1e90ff ;
+    background:#0252a3;
     color:#ffffff ;
     transition: background 300ms ease-in;
 }
